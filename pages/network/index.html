@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!--
+                         
+                        MADE BY PENTHM @ TUMBLR
+                            PAGE 01: NETWORK
+                            
+                
+          DO NOT EDIT, STEAL, OR CLAIM PARTS OF CODE AS YOUR OWN.
+
+-->
+
+<head>
+
+    <title>network title</title>
+    <link rel="shortcut icon" href="{FavIcon}" />
+    <link rel="alternate" type="application/rss+xml" href="{RSS}" />
+
+<style type="text/css">
+
+/*
+
+If you are not satisfied with the given design, you may customize it as you wish, as long as the credit is in tact.
+
+I will, in comments, indicate where you may edit the colors and other attributes of certain elements in the code. To easily find the hex color code online, go to www.colorpicker.com and paste in the color code once you find one that you like.
+
+*/
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 4px;
+    background: #ffffff; /* bkg color of scrollbar */
+    border-radius:5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #BFBFBF; /* color of scrollbar, in the case that the desc of a member gets too long */
+    width:5px;
+    border-top:3px solid #ffffff; /* bkg color of scrollbar */
+    border-bottom:3px solid #ffffff; /* bkg color of scrollbar */
+    border-right:3px solid #ffffff; /* bkg color of scrollbar */
+    border-left:2px solid #ffffff; /* bkg color of scrollbar */
+    border-radius:5px;
+}
+::-moz-selection{
+    background:#9CCBDB; /* color of selection (when you click/drag over part of the text) */
+    color:white;
+}
+::selection{
+    background:#9CCBDB; /* color of selection (when you click/drag over part of the text) */
+    color:white;
+}
+
+body {
+    color:#ABABAB; /* color of header description AND member description */ 
+    background:#F7F7F7; /* color of background */
+    font-family:Calibri, sans-serif;
+}
+
+header {
+    position:absolute;
+    margin:160px 0 20px 50%;
+    width:250px;
+    left:-125px;
+    text-align:center;
+    font-family:Consolas, Calibri, sans-serif;
+}
+
+header img {
+    border-radius:50%;
+    margin-bottom:13px;
+    width:45px;
+    height:45px;
+}
+
+header #title {
+    font-size:16px;
+    margin-bottom:14px;
+    color:#878787; /* color of network title */
+}
+header #desc {
+    font-size:10px;
+}
+
+a {
+    text-decoration:none;
+    color:#ABABAB; /* color of < > back and dash links */
+}
+a:hover{
+    text-decoration:underline;
+    cursor:help; /* cursor on link hover - remove this line if you don't like */
+}
+
+#container {
+    position:absolute;
+    top:340px; /* make this number bigger if your header desc. gets too long */
+    width:360px;
+    height:auto;
+    left:-180px;
+    margin: 0 0 200px 50%;
+    text-align:left;
+}
+
+#container a {
+    text-decoration:none;
+}
+
+#container img {
+    width:80px;
+    height:80px;
+    background:#DEDEDE;
+    margin:18px;
+}
+.img {
+    position:relative;
+}
+#container .about {
+    opacity:0;
+    position:absolute;
+    top:-90px;
+    left:7px;
+    text-align:center; /* <-- change to "left" if you want left    */
+    width:80px;        /*     align for the member description     */
+    height:80px;
+    background:white; /* background color of hover box/description */
+    padding:10px;
+    word-wrap:break-word;
+    word-break:keep-all;
+    font-size:9px;
+    border-radius:5px;
+    overflow:scroll;
+}
+#container .img:hover .about {
+    opacity:1;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;    
+    transition: all .4s ease-in-out;
+}
+#container .img .about {
+    opacity:0;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;    
+    transition: all .4s ease-in-out;
+    z-index:1000000;
+}
+#container .img:hover img {
+    opacity:0;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;    
+    transition: all .4s ease-in-out;
+    z-index:1000000;
+}
+#container .img img {
+    opacity:1;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;    
+    transition: all 1s ease-in-out;
+    z-index:1000000;
+}
+.name {
+    color:#6E6E6E; /* color of name of member */
+    font-weight:bold;
+    line-height:25px;
+    font-size:11px;
+    text-align:center;
+}
+#hoshi {
+    color:#6E6E6E;
+    font-size:9px;
+    font-family:Calibri, Consolas, sans-serif;
+    position: fixed;
+    top:10px;
+    left:10px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<img src="{Favicon}"/><br/>
+<div id="title">network</div>
+<div id="desc">
+    [description goes here. shorter is better.]
+<br><br>
+    <a href="/" title="back"><</a> <a href="http://tumblr.com/dashboard" title="dash">></a>
+</div>
+</header>
+
+<div id="container">
+    
+    <!--                            ROW 1                           -->
+    <a href="LINK TO BLOG HERE" class="img">
+        <div class="about">
+            <div class="name">name</div>
+            a short description goes here
+        </div>
+        <img src="http://s24.postimg.org/4kojxft9d/filler_icon01.png"/>
+        <!-- put the link to image in src="____" -- remember to keep it
+             as close to 1 x 1 ratio as possible, since otherwise your
+             image will look ugly -->
+    </a>
+    <a href="LINK TO BLOG HERE" class="img">
+        <div class="about">
+            <div class="name">name</div>
+            a short description goes here
+        </div>
+        <img src="http://s24.postimg.org/4kojxft9d/filler_icon01.png"/>
+    </a>
+    <a href="LINK TO BLOG HERE" class="img">
+        <div class="about">
+            <div class="name">name</div>
+            a short description goes here
+        </div>
+        <img src="http://s24.postimg.org/4kojxft9d/filler_icon01.png"/>
+    </a>
+    <br>
+    
+    
+    <!--                            ROW 2                           -->
+    <a href="LINK TO BLOG HERE" class="img">
+        <div class="about">
+            <div class="name">name</div>
+            a short description goes here
+        </div>
+        <img src="http://s24.postimg.org/4kojxft9d/filler_icon01.png"/>
+        <!-- put the link to image in src="____" -- remember to keep it
+             as close to 1 x 1 ratio as possible, since otherwise your
+             image will look ugly -->
+    </a>
+    <a href="LINK TO BLOG HERE" class="img">
+        <div class="about">
+            <div class="name">name</div>
+            a short description goes here
+        </div>
+        <img src="http://s24.postimg.org/4kojxft9d/filler_icon01.png"/>
+    </a>
+    <a href="LINK TO BLOG HERE" class="img">
+        <div class="about">
+            <div class="name">name</div>
+            a short description goes here
+        </div>
+        <img src="http://s24.postimg.org/4kojxft9d/filler_icon01.png"/>
+    </a>
+    <br>
+    
+    
+    <!--                            ROW 3                           -->
+    <a href="LINK TO BLOG HERE" class="img">
+        <div class="about">
+            <div class="name">name</div>
+            a short description goes here
+        </div>
+        <img src="http://s24.postimg.org/4kojxft9d/filler_icon01.png"/>
+        <!-- put the link to image in src="____" -- remember to keep it
+             as close to 1 x 1 ratio as possible, since otherwise your
+             image will look ugly -->
+    </a>
+    <a href="LINK TO BLOG HERE" class="img">
+        <div class="about">
+            <div class="name">name</div>
+            a short description goes here
+        </div>
+        <img src="http://s24.postimg.org/4kojxft9d/filler_icon01.png"/>
+    </a>
+    <a href="LINK TO BLOG HERE" class="img">
+        <div class="about">
+            <div class="name">name</div>
+            a short description goes here
+        </div>
+        <img src="http://s24.postimg.org/4kojxft9d/filler_icon01.png"/>
+    </a>
+    <br>
+    
+    
+</div>
+
+<!--
+    
+    paste in the code below for every new member you want to add.
+    add <br> after three members to break to the next line.
+    make sure you paste in this code before </div>
+
+    <a href="LINK TO BLOG HERE" class="img">
+        <div class="about">
+            <div class="name">name</div>
+            a short description goes here.
+        </div>
+        <img src="http://s24.postimg.org/4kojxft9d/filler_icon01.png"/>
+    </a>
+
+-->
+
+<div id="hoshi"><a href="http://penthm.tumblr.com/" target="_blank">p</a></div>
+</body>
+</html>
