@@ -1,4 +1,4 @@
-# Tumblr Themes by chynu
+# Tumblr Themes by chynu-themes
 
 ## Installation
 Log onto your tumblr and go to settings. Click on the blog that you want to customize. There will be an "Edit Theme" button for theme customization. This will bring you to the theme customization page.
