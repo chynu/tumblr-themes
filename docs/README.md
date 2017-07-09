@@ -9,3 +9,7 @@ Again, file an issue or send an ask.
 
 ### New theme requests.
 Please understand that not all requests can/will be fulfilled.
+
+## Links
+
+ - [Theme ideas](https://github.com/chynu/tumblr-themes/blob/master/docs/ideas.md)
