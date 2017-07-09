@@ -16,7 +16,7 @@ Click [here](http://raw.githubusercontent.com/chynu/tumblr-themes/master/themes/
 
 
 ## Preview
+Click [here](http://htmlpreview.github.io/?https://github.com/chynu/tumblr-themes/blob/master/themes/empty/preview.html) to view a static preview.
+
 ![Preview_1](http://68.media.tumblr.com/0f0915c8608002adb1cfc7e2d5c3a226/tumblr_nytgeiu1BV1uwmg08o2_1280.gif)
 ![Preview_2](http://68.media.tumblr.com/566cbb020a4cbe82fbe611989c794ae9/tumblr_nytgeiu1BV1uwmg08o1_1280.gif)
-
-Click [here](http://htmlpreview.github.io/?https://github.com/chynu/tumblr-themes/blob/master/themes/empty/preview.html) to view a static preview.
