@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ 
+
+<!--
+
+    THEME BY PENTHM.TUMBLR.COM
+    PLEASE DO NOT STEAL OR REMOVE CREDIT OR USE AS BASE
+    THANK YOU!
+
+    THEME 04: SUBTILITY
+    AUGUST 2014
+
+-->
+ 
+ 
+<head>
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!--meta things-->
+<meta name="image:background" content="https://c1.staticflickr.com/9/8093/8406007115_a6c06aaf31.jpg"/>
+
+<meta name="if:captions" content="0"/>
+<meta name="if:faded" content="1"/>
+<meta name="if:fade transitions" content="1"/>
+<meta name="if:search box" content="1" />
+
+<meta name="color:bg solid color" content="#f2f2f2"/>
+<meta name="color:text" content="#8C8C8C"/>
+<meta name="color:links" content="#787377"/>
+<meta name="color:links hover" content="#79bcc9"/>
+<meta name="color:sidebar bg" content="#E1E8E7"/>
+<meta name="color:link dots" content="#ffffff"/>
+<meta name="color:link dots hover" content="#EDEFF5"/>
+<meta name="color:morelinks text" content="#BABABA"/>
+<meta name="color:info dots hover color" content="#f2f2f2" />
+<meta name="color:post bg color" content="#ffffff" />
+<meta name="color:scrollbar" content="#EDEDED"/>
+
+<meta name="text:your URL" content=""/>
+<meta name="text:updates text" content="updates"/>
+<meta name="text:link 1 title" content="link 1"/>
+<meta name="text:link1" content="/"/>
+<meta name="text:link 2 title" content="link 2"/>
+<meta name="text:link2" content="/ask"/>
+<meta name="text:link 3 title" content="link 3"/>
+<meta name="text:link3" content="/"/>
+<meta name="text:link 4 title" content="link 4"/>
+<meta name="text:link4" content="/"/>
+
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}" />
+<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'> <!-- used as 'Lato' -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips({
+                tip_follows_cursor:true,
+                tip_delay_time:30,
+                tip_fade_speed:300,
+                attribute:"title"
+            });
+        });
+    })(jQuery);
+</script>
+<script>
+    jQuery(document).ready(function(){
+        jQuery(".morelinks").hide();
+        $(".moreu").click(function(){
+            $(this).next(".morelinks").toggle(400);
+        });
+    })(jQuery);
+</script>
+    
+<style>
+    ::-webkit-scrollbar {
+        width: 7px;
+        height: 4px;
+        background: white 
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: {color:scrollbar};
+        width:5px;
+        border-right:3px solid white;
+        border-left:2px solid white;
+    }
+    
+    
+    #s-m-t-tooltip{
+        font-size:8px;
+        position:absolute;
+        margin-top: 20px;
+        margin-left:20px;
+        letter-spacing:2px;
+        z-index:9999;
+        font-family:'Lato', Tahoma;
+        background:#ffffff;
+        text-transform:lowercase;
+        padding:2px 5px 2px 5px;
+        color:#BABABA;
+        opacity:0.8;
+        max-width:150px;
+        word-wrap:break-word;
+        word-break:keep-all;
+    }
+    
+    
+    body {
+        font-family:'Lato', Tahoma, Trebuchet, sans-serif;
+        font-size:11.5px;
+        color:{color:text};
+        background:url('{image:background}') fixed repeat;
+        margin:0;
+        letter-spacing:1px;
+        z-index:1;
+    }
+    #accent {
+        position:fixed;
+        background:{color:bg solid color};
+        width:100%;
+        height:50%;
+        bottom:0px;
+        left:0px;
+        opacity:10%;
+        z-index:-1349283524;
+    }
+    a {
+        text-decoration:none;
+        color:{color:links};
+        {block:iffadetransitions}
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;    
+        transition: all .2s ease-in-out;{/block:iffadetransitions}
+    }
+    a:hover{
+        color:{color:links hover};
+        {block:iffadetransitions}
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;    
+        transition: all .2s ease-in-out;{/block:iffadetransitions}
+        cursor:help;
+    }
+    blockquote {
+        border-left: 5px solid {color:bg solid color};
+        padding-left:5px;
+    }
+    pre {
+        background:{color:bg solid color};
+        margin:8px;
+        padding:5px;
+        color:#7A7A7A;
+        width:250px
+        height:auto;
+        word-wrap:break-word;
+        word-break:keep-all;
+    }
+    {block:iffaded}
+    .post img{
+        opacity:0.5;
+        {block:iffadetransitions}-webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;{/block:iffadetransitions}
+    }
+    .post img:hover{
+        opacity:1;
+        {block:iffadetransitions}-webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;{/block:iffadetransitions}
+    }
+    .ps {
+        opacity:0.5;
+        {block:iffadetransitions}-webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;{/block:iffadetransitions}
+    }
+    .ps:hover{
+        opacity:1;
+        {block:iffadetransitions}-webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;{/block:iffadetransitions}
+    }
+    {/block:iffaded}
+    
+
+
+    
+    
+    #entries {
+        position:absolute;
+        margin-left:65%;
+        margin-top:100px;
+        width:250px;
+        {block:permalinkpage}margin-bottom:60px;{/block:permalinkpage}
+    }
+    
+    
+    .post {
+        background:{color:post bg color};
+        border: 5px solid {color:bg solid color};
+        margin-bottom:100px;
+        width:250px;
+        padding:20px;
+        padding-bottom:40px;
+        border-radius:10px;
+    }
+    .info {
+        float:right;
+        margin-top:10px;
+    }
+    .info a{
+        color:{color:bg solid color};
+        font-size:20px;
+        padding:3px;
+        text-decoration:none;
+        {block:iffadetransitions}-webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;    
+        transition: all .2s ease-in-out;{/block:iffadetransitions}
+    }
+    .info a:hover{
+        text-decoration:none;
+        color:{color:info dots hover color};
+        {block:iffadetransitions}-webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;    
+        transition: all .2s ease-in-out;{/block:iffadetransitions}
+    }
+    #tags {
+        position:relative;
+        top:50px;
+        background:transparent;
+        display:inline;
+        float:left;
+        max-width:250px;
+        word-break:normal;
+        {block:iffadetransitions}-webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;    
+        transition: all .2s ease-in-out;{/block:iffadetransitions}
+    }
+    #tags a{
+        position:relative;
+        text-size:11px;
+        opacity:0.5px;
+        color:{color:links};
+        display:inline;
+    }
+    #tags a:hover{
+        color:{color:links hover};
+    }
+    #pagi{
+        position:relative;
+        text-align:center;
+        font-size:10.5px;
+        margin-top:7px;
+    }
+    #pagi a{
+        color:{color:link dots};
+    }
+    #pagi a:hover{
+        color:{color:link dots hover};
+    }
+    #sidebar{
+        position:fixed;
+        left:15%;
+        top:45%;
+        width:220px;
+        height:auto;
+        background-color:{color:sidebar bg};
+        z-index:20;
+        padding:20px;
+        border-radius:10px;
+        text-align:center;
+    }
+    #btitle a{
+        padding-top:10px;
+        text-align:center;
+        font-size:15px;
+        letter-spacing:1px;
+        color:{color:text};
+        {block:iffadetransitions}-webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;{/block:iffadetransitions}
+    }
+    #btitle a:hover{
+        letter-spacing:3px;
+        color:{color:text};
+        {block:iffadetransitions}-webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;{/block:iffadetransitions}
+    }
+    #linkeus a{
+        display:inline-block;
+        color:{color:link dots};
+        font-size:18px;
+        padding:15px;
+        margin-top:10px;
+        {block:iffadetransitions}-webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;{/block:iffadetransitions}
+    }
+    #linkeus a:hover{
+        color:{color:link dots hover};
+        {block:iffadetransitions}-webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;{/block:iffadetransitions}
+    }
+    .morelinks{
+        text-align:center;
+    }
+    #updates{
+        margin:10px;
+        background:white;
+        color:{color:text};
+        padding:10px;
+        text-align:left;
+    }
+    #updates a{
+        margin:0px;
+        color:{color:links};
+        padding:0px;
+        font-size:11.5px;
+    }
+    #updates a:hover{
+        color:{color:links hover};
+    }
+    #mm a{
+        font-size:11.5px;
+        padding:7px;
+        background:{color:link dots};
+        color:{color:morelinks text};
+        width:70%;
+        margin-bottom:5px;
+    }
+    #mm a:hover{
+        color:{color:sidebar bg};
+    }
+    #bdesc {
+        font-size:11.5px;
+    }
+    #bdesc a{
+        font-size:11.5px;
+        color:{color:links};
+        padding:0px;
+        margin:0px;
+    }
+    
+    
+    
+    
+    
+    
+    #linkeu{
+        font-size:15px;
+        text-align:center;
+    }
+    #yaegi{
+        text-align:right;
+    }
+    #baekhyun{
+        font-size:15px;
+    }
+    #sehun{
+        font-size:15px;
+        font-style:italic;
+    }
+    #jilmeun {
+        background:white;
+        padding:10px;
+        min-height:40px;
+    }
+    #mul{
+        margin-top:13px;
+        margin-left:10px;
+        font-style:italic;
+        background:{color:bg solid color};
+        margin:10px auto;
+        height:auto;
+        width:auto;
+        padding:10px;
+    }
+    #quast img{
+        text-align:center;
+        background:{color:bg solid color};
+        padding:7px;
+        margin-top:-25px;
+    }
+    .sfm input {background-color: {color:bg solid color}; 
+    font-size: 8px; 
+    border: 0px; 
+    text-transform: lowercase; 
+    margin-top: 0px; 
+    color: #999; 
+    letter-spacing: 1px; 
+    padding: 7px 8px;
+    width:150px;
+    font-family: 'Lato', calibri, helvetica, arial;
+        opacity:0.4;
+        {block:iffadetransitions}-webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;{/block:iffadetransitions}
+        cursor:help;
+    }
+    .sfm input:hover{
+        opacity:1;
+        {block:iffadetransitions}-webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;{/block:iffadetransitions}
+    }
+    
+    
+    #chanyeol{
+        position:fixed;
+        text-align:center;
+        bottom:10px;
+        left:10px;
+        opacity:0.5;
+        z-index:500;
+    }
+</style>
+<link href="#s-m-t-tooltip" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div id="sidebar">
+        <div id="btitle"><a href="{BlogURL}">{Title}</a></div>
+        <div id="linkeus">
+                <a class="moreu" title="about">●</a><div class="morelinks"><div id="bdesc">{Description}</div></div>
+                <a class="moreu" title="message">●</a><div class="morelinks"><p><iframe frameborder="0" scrolling="no" width="180" height="250" src="http://www.tumblr.com/ask_form/{text:your URL}.tumblr.com" style="background-color:transparent; overflow:hidden;" id="ask_form"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('ask_form').allowTransparency=true;</script><![endif]--></p></div>
+                <a title="more" class="moreu">●</a>
+            <div class="morelinks"><div id="mm">
+                {block:iflink1}<a href="{text:link1}">{text:link 1 title}</a>{/block:iflink1}
+                {block:iflink2}<a href="{text:link2}">{text:link 2 title}</a>{/block:iflink2}
+                {block:iflink3}<a href="{text:link3}">{text:link 3 title}</a>{/block:iflink4}
+                {block:iflink4}<a href="{text:link4}">{text:link 4 title}</a>{/block:iflink4}
+            </div></div>
+            <a class="moreu" title="updates">●</a><div class="morelinks"><div id="updates">{text:updates text}</div></div>
+    {block:ifsearchbox}<form action="/search" method="get" class="sfm">
+    <input type="text" name="q" value="{SearchQuery}" id="sf"/>
+    <!--input type="submit" value="Search" id="sb"/-->
+    </form>{/block:ifsearchbox}
+        </div>
+            {block:Pagination}<div id="pagi">
+        {block:PreviousPage}<a href="{PreviousPage}" title="yesterday">◄</a>   {/block:PreviousPage}{block:NextPage}<a href="{NextPage}" title="tomorrow">►</a>{/block:NextPage}</div>{/block:Pagination}
+        
+    </div>
+    <div id="entries">
+    {block:Posts}
+    <div class="post">
+   
+        {block:Text}
+            {block:Title}<div id="baekhyun">{Title}</div>{/block:Title}
+            {Body}
+        {/block:Text}
+       
+        {block:Photo}
+            <img width="250" src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+            {block:ifcaptions}
+                {block:Caption}{Caption}{/block:Caption}
+            {/block:ifcaptions}
+            {block:ifnotcaptions}
+                {block:Caption}{block:permalinkpage}{Caption}{/block:permalinkpage}{/block:Caption}
+            {/block:ifnotcaptions}
+        {/block:Photo}
+       
+        {block:Photoset}
+            <div class="ps">{Photoset-250}</div>
+            {block:ifcaptions}
+                {block:Caption}{Caption}{/block:Caption}
+            {/block:ifcaptions}
+            {block:ifnotcaptions}
+                {block:Caption}{block:permalinkpage}{Caption}{/block:permalinkpage}{/block:Caption}
+            {/block:ifnotcaptions}
+        {/block:Photoset}
+       
+        {block:Quote}
+            <div id="sehun">"{Quote}"</div><br/>
+            {block:Source}<div style="text-indent:10px;">&mdash;{Source}</div>{/block:Source}
+        {/block:Quote}
+       
+        {block:Link}
+            <div id="linkeu"><a href="{URL}" {Target}>{Name}</a></div>
+            <br/>
+            {block:Description}{Description}{/block:Description}
+        {/block:Link}
+       
+        {block:Chat}
+            {block:Title}{Title}{/block:Title}
+            <table>
+                {block:Lines}
+                <tr>
+                    <th>{block:Label}<div id="yaegi">{Label}</div>{/block:Label}</th>
+                    <td>{Line}</td>
+                </tr>
+                {/block:Lines}
+            </table>
+        {/block:Chat}
+       
+        {block:Audio}
+            {AudioPlayer}
+                {block:Caption}{Caption}{/block:Caption}
+        {/block:Audio}
+       
+        {block:Video}
+            {Video-400}
+            {block:Caption}{Caption}{/block:Caption}
+        {/block:Video}
+       
+        {block:Answer}
+        <br/>
+            <div id="jilmeun">
+                <center><div id="quast"><a href="{AskerURL}" target="_blank"><img src="{AskerPortraitURL-24}"/></a></div><br/>{Asker} said:</center>
+                <div id="mul">{Question}</div>
+               
+            </div>
+            {Answer}
+        {/block:Answer}
+       
+        <div class="info">
+            <div id="extra"><a {block:indexpage}{block:HasTags}title="{block:Tags}#{Tag}{/block:Tags}"{/block:HasTags}{/block:indexpage}{block:permalinkpage}title="{TimeAgo}"{/block:permalinkpage} href="{Permalink}">●</a>{block:RebloggedFrom}  <a href="{ReblogParentURL}" title="via: {ReblogParentName}">●</a>{/block:RebloggedFrom}{block:ContentSource}  <a href="{SourceURL}" title="home: {SourceTitle}">●</a>{/block:ContentSource}</div>
+        </div>
+        {block:permalinkpage}{block:HasTags}
+                {block:Tags}<div id="tags"><a href="{TagURL}">#{Tag}</a></div> {/block:Tags}
+            {/block:HasTags}{/block:permalinkpage}
+       
+    </div>
+    {/block:Posts}
+    
+    {block:PostNotes}{PostNotes}{/block:PostNotes}
+    </div>
+    
+    
+    <a href="http://penthm.tumblr.com/" title="theme by penthm" target="_blank"><div id="chanyeol">♚</div></a>
+</body>
+<div id="accent"></div>
+
+
+</html>

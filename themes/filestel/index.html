@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ 
+ 
+
+<!--
+
+    THEME BY PENTHM.TUMBLR.COM
+    PLEASE DO NOT STEAL OR REMOVE CREDIT
+
+    THEME 01: FILESTEL
+    JULY 2014
+
+-->
+ 
+ 
+<head>
+<link rel="alternate" type="application/rss+xml" href="{RSS}" />
+
+
+<!--meta things-->
+<meta name="if:dashes" content="1"/>
+<meta name="if:captions" content="1"/>
+
+<meta name="color:title" content="#ffffff"/>
+<meta name="color:title hover" content="#B0B0B0"/>
+<meta name="color:description" content="#b6b6b6"/>
+<meta name="color:background" content="#ffffff"/>
+<meta name="color:header" content="#FFE0F9"/>
+<meta name="color:header dash" content="#E3E3E3"/>
+<meta name="color:footer" content="#C2C2C2"/>
+<meta name="color:footer dash" content="#949494"/>
+
+<meta name="color:ask tab color" content="#eae9e9"/>
+<meta name="color:link 1 color" content="#ceeae8"/>
+<meta name="color:link 2 color" content="#c8d2d4"/>
+<meta name="color:link 3 color" content="#c8d2d4"/>
+<meta name="color:links" content="#787377"/>
+<meta name="color:links hover" content="#E6A5DD"/>
+<meta name="color:posts bg" content="#E8F8FA"/>
+<meta name="color:info bg" content="#ffffff"/>
+
+
+<meta name="text:link 1 title" content="link 1"/>
+<meta name="text:link 1" content="/"/>
+<meta name="text:link 2 title" content="link 2"/>
+<meta name="text:link 2" content="/"/>
+<meta name="text:link 3 title" content="link 3"/>
+<meta name="text:link 3" content="/"/>
+
+
+<link rel="shortcut icon" href="{Favicon}" />
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips({
+                tip_follows_cursor:true,
+                tip_delay_time:30,
+                tip_fade_speed:300,
+                attribute:"title"
+            });
+        });
+    })(jQuery);
+</script>
+ 
+ 
+<style type="text/css">
+    
+     
+    ::-webkit-scrollbar {width: 7px; height: 4px; background: #ffffff; }
+    ::-webkit-scrollbar-thumb { background-color: #EDEDED;}
+    
+    
+    #s-m-t-tooltip{
+        font-size:8px;
+        position:absolute;
+        margin-top: 15px;
+        margin-left:10px;
+        letter-spacing:2px;
+        z-index:9999;
+        font-family:Tahoma;
+        background:#FFF5FD;
+        {block:ifdashes}border: 1px dashed #E3E3E3;{/block:ifdashes}
+        text-transform:lowercase;
+        padding:2px 5px 2px 5px;
+        color:#BABABA;
+    }
+    
+    
+    body {
+        font-family:Tahoma, Trebuchet, sans-serif;
+        font-size:12px;
+        color:#8C8C8C;
+        background:{color:background};
+    margin:0;
+    }
+    a {
+        text-decoration:none;
+        color:{color:links};
+        -webkit-transition: all .1s ease-in-out;
+        -moz-transition: all .1s ease-in-out;
+        -o-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;    
+        transition: all .1s ease-in-out;
+    }
+    a:hover{
+        color:{color:links hover};
+        -webkit-transition: all .1s ease-in-out;
+        -moz-transition: all .1s ease-in-out;
+        -o-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;    
+        transition: all .1s ease-in-out;
+    }
+    blockquote {
+        border-left: 5px solid #D6D6D6;
+        opacity:0.7;
+        padding-left:10px;
+    }
+    
+    
+    
+    #header {
+        position:fixed;
+        top:0px;
+        width:100%;
+        height:70px;
+        padding-top:30px;
+        background-color:{color:header};
+        z-index:10;
+        {block:ifdashes}border-bottom:2px dashed {color:header dash};{/block:ifdashes}
+    }
+    #title{
+        color:{color:title};
+        text-align:center;
+        font-size:30px;
+    }
+    #title a{
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;
+    }
+    #title a:hover{
+        text-decoration:none;
+        color:{color:title hover};
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;
+    }
+    #desc{
+        color:{color:description};
+        text-align:center;
+        font-size:13px;
+    }
+    #footer{
+        position:fixed;
+        bottom:0px;
+        width:100%;
+        height:50px;
+        background-color:{color:footer};
+        {block:ifdashes}border-top:2px dashed {color:footer dash};{/block:ifdashes}
+    }
+    
+    
+    
+    #links {
+        position:fixed;
+        z-index:5;
+        float:left;
+        top:90px;
+    }
+    .link {
+        list-style:none;
+        display:inline;
+    }
+    .link a {
+        width:20px;
+        display:inline;
+        text-decoration:none;
+        color:white;
+        padding:10px;
+        padding-bottom:10px;
+        margin:3px;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;
+    }
+    .link a:hover{
+        padding-bottom:60px;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;
+    }
+    
+    
+    
+    
+    #post {
+        background:{color:posts bg};
+        margin-bottom:100px;
+        width:400px;
+        padding:20px;
+        padding-bottom:40px;
+        {block:ifdashes}border: 1px dashed #E3E3E3;{/block:ifdashes}
+    }
+    #entries {
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:200px;
+        width:400px;
+    }
+    header a {
+        text-decoration:none;
+        color:white;
+    }
+    header a:hover{
+        text-decoration:underline;
+    }
+    #info {
+        float:right;
+        padding-bottom:0px;
+        margin-top:7px;
+    }
+    #info a{
+        border:0px solid white;
+        background-color:{color:info bg};
+        padding:3px;
+        text-decoration:none;
+    }
+    #info a:hover{
+        text-decoration:none;
+        background-color:{color:posts bg};
+        color:#8C8C8C;
+    }
+    #pagi{
+        bottom:50px;
+    }
+    #pagi-back{
+        position:fixed;
+        color:black;
+        background:white;
+        font-size:10px;
+        height:10px;
+        width:auto;
+        bottom:51px;
+        letter-spacing:2px;
+        {block:ifdashes}border:2px dashed {color:footer dash};{/block:ifdashes}
+        padding:3px;
+        right:80px;
+        z-index:10;
+    }
+    #pagi-forward{
+        position:fixed;
+        color:black;
+        background:white;
+        font-size:10px;
+        height:10px;
+        width:auto;
+        bottom:51px;
+        letter-spacing:2px;
+        {block:ifdashes}border:2px dashed {color:footer dash};{/block:ifdashes}
+        padding:3px;
+        right:40px;
+        z-index:10;
+    }
+    
+    
+    
+    
+    #linkeu{
+        font-size:15px;
+        text-align:center;
+    }
+    #yaegi{
+        text-align:right;
+    }
+    #baekhyun{
+        font-size:15px;
+    }
+    #sehun{
+        font-size:15px;
+        font-style:italic;
+    }
+    #jilmeun {
+        background:white;
+        padding:10px;
+        min-height:40px;
+    }
+    #mul{
+        margin-top:13px;
+        margin-left:10px;
+        font-style:italic;
+    }
+    #quast {
+        float:right;
+        background:{color:posts bg};
+        padding:7px;
+        margin-top:-25px;
+    }
+    
+    
+    #chanyeol{
+        position:fixed;
+        text-align:center;
+        width:17px;
+        height:17px;
+        bottom:5px;
+        left:5px;
+        opacity:0.8;
+    }
+</style>
+<link href="#s-m-t-tooltip" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    
+    <div id="header">
+        <header>
+            <div id="title"><a href="/">{Title}</a></div>
+            {block:Description}<div id="desc">{Description}</div>{/block:Description}
+        </header>
+    </div>
+    <div id="links">
+        <ul>
+            <li class="link"><a style="background-color:{color:ask tab color};" href="/ask" title="ask"></a></li>
+            {block:iflink1}<li class="link"><a style="background-color:{color:link 1 color};" href="{text:link 1}" title="{text:link 1 title}"></a></li>{/block:iflink1}
+            {block:iflink2}<li class="link"><a style="background-color:{color:link 2 color};" href="{text:link 2}" title="{text:link 2 title}"></a></li>{/block:iflink2}
+            {block:iflink3}<li class="link"><a style="background-color:{color:link 3 color};" href="{text:link 3}" title="{text:link 3 title}"></a></li>{/block:iflink3}
+        </ul>
+    </div>
+    
+    <div id="entries">
+    {block:Posts}
+    <div id="post">
+    
+        {block:Text}
+            {block:Title}<div id="baekhyun">{Title}</div>{/block:Title}
+            {Body}
+        {/block:Text}
+        
+        {block:Photo}
+            <a href="{Permalink}"><img width="400px" src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/></a>
+            {block:Caption}{block:ifcaptions}{Caption}{/block:ifcaptions}{/block:Caption}
+        {/block:Photo}
+        
+        {block:Photoset}
+            {Photoset-400}
+            {block:Caption}{block:ifcaptions}{/block:ifcaptions}{/block:Caption}
+        {/block:Photoset}
+        
+        {block:Quote}
+            <div id="sehun">"{Quote}"</div><br/>
+            {block:Source}<div style="text-indent:10px;">&mdash;{Source}</div>{/block:Source}
+        {/block:Quote}
+        
+        {block:Link}
+            <div id="linkeu"><a href="{URL}" {Target}>{Name}</a></div>
+            {block:Description}{Description}{/block:Description}
+        {/block:Link}
+        
+        {block:Chat}
+            {block:Title}{Title}{/block:Title}
+            <table>
+                {block:Lines}
+                <tr>
+                    <th>{block:Label}<div id="yaegi">{Label}</div>{/block:Label}</th>
+                    <td>{Line}</td>
+                </tr>
+                {/block:Lines}
+            </table>
+        {/block:Chat}
+        
+        {block:Audio}
+            {AudioPlayer}
+                {block:Caption}{Caption}{/block:Caption}
+        {/block:Audio}
+        
+        {block:Video}
+            {Video-400}
+            {block:Caption}{Caption}{/block:Caption}
+        {/block:Video}
+        
+        {block:Answer}
+            <div id="jilmeun">
+                <div id="mul">{Question}</div>
+                <div id="quast"><a href="{AskerURL}" target="_blank"><img src="{AskerPortraitURL-24}"/></a></div>
+                
+            </div><br/>
+            {Answer}
+        {/block:Answer}
+        
+        <div id="info">
+            <a title="{TimeAgo}" href="{Permalink}">{NoteCount}</a>{block:RebloggedFrom}  <a href="{ReblogParentURL}" title="{ReblogParentName}">via</a>{/block:RebloggedFrom}{block:ContentSource}  <a href="{SourceURL}" title="{SourceTitle}">orig</a>{/block:ContentSource}
+        </div>
+        
+    </div>
+    {/block:Posts}
+    
+    {block:PostNotes}{PostNotes}{/block:PostNotes}
+    </div>
+    
+    {block:Pagination}
+        {block:PreviousPage}<div id="pagi-back"><a href="{PreviousPage}">prev</a></div>{/block:PreviousPage}
+        {block:NextPage}<div id="pagi-forward"><a href="{NextPage}">next</a></div>{/block:NextPage}
+    {/block:Pagination}
+    
+    <div id="footer"></div>
+    
+    <a href="http://sillybaek.tumblr.com/" title="theme by sillybaek" target="_blank"><div id="chanyeol">♚</div></a>
+</body>
+
+
+</html>

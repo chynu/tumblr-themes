@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+ 
+
+<!--
+
+    THEME BY PENTHM.TUMBLR.COM
+    PLEASE DO NOT STEAL OR REMOVE CREDIT
+    THANK YOU!
+
+    THEME 02: FILE CABINET
+    JULY 2014
+
+-->
+ 
+ 
+<head>
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!--meta things-->
+<meta name="if:captions" content="1"/>
+<meta name="if:faded" content="1"/>
+
+<meta name="color:title" content="#ffffff"/>
+<meta name="color:title hover" content="#B0B0B0"/>
+<meta name="color:description" content="#b6b6b6"/>
+<meta name="color:background" content="#ffffff"/>
+<meta name="color:text" content="#8C8C8C"/>
+<meta name="color:scrollbar" content="#EDEDED"/>
+
+<meta name="color:links" content="#787377"/>
+<meta name="color:links hover" content="#FDC9FF"/>
+<meta name="color:sidebar links text" content="#787377"/>
+<meta name="color:posts bg" content="#E8F8FA"/>
+
+<meta name="text:link 1 title" content="link 1"/>
+<meta name="text:link1" content="/"/>
+<meta name="text:link 2 title" content="link 2"/>
+<meta name="text:link2" content="/"/>
+<meta name="text:link 3 title" content="link 3"/>
+<meta name="text:link3" content="/"/>
+<meta name="text:link 4 title" content="link 4"/>
+<meta name="text:link4" content="/"/>
+
+
+
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips({
+                tip_follows_cursor:true,
+                tip_delay_time:30,
+                tip_fade_speed:300,
+                attribute:"title"
+            });
+        });
+    })(jQuery);
+</script>
+ 
+ 
+<style type="text/css">
+    
+     
+    ::-webkit-scrollbar {
+        width: 7px;
+        height: 4px;
+        background: {color:background}; 
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: {color:scrollbar};
+        width:5px;
+        border:2px solid {color:background};
+    }
+    
+    
+    #s-m-t-tooltip{
+        font-size:8px;
+        position:absolute;
+        margin-top: 15px;
+        margin-left:10px;
+        letter-spacing:2px;
+        z-index:9999;
+        font-family:'Inconsolata', Tahoma;
+        background:#ffffff;
+        text-transform:lowercase;
+        padding:2px 5px 2px 5px;
+        color:#BABABA;
+        opacity:0.8;
+    }
+    #tumblr_controls {   
+        -webkit-filter: invert(100%);
+        z-index: 20000;
+        opacity: 0.4;
+    }
+    
+    
+    body {
+        font-family:'Inconsolata', Tahoma, Trebuchet, sans-serif;
+        font-size:12px;
+        color:{color:text};
+        background:{color:background};
+        margin:0;
+    }
+    a {
+        text-decoration:none;
+        color:{color:links};
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;    
+        transition: all .2s ease-in-out;
+    }
+    a:hover{
+        color:{color:links hover};
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;    
+        transition: all .2s ease-in-out;
+    }
+    blockquote {
+        border-left: 5px solid #D6D6D6;
+        opacity:0.7;
+        padding-left:10px;
+    }
+    
+
+
+    
+    
+    
+    
+    #post {
+        background:{color:posts bg};
+        margin-bottom:100px;
+        width:250px;
+        padding:20px;
+        padding-bottom:40px;
+        border-radius:3px;
+        {block:iffaded}opacity:0.6;{/block:iffaded}
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;
+    }
+    #post:hover {
+        opacity:1;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;
+    }
+    #entries {
+        margin-left:65%;
+        margin-right:0px;
+        margin-top:100px;
+        width:250px;
+    }
+    #filecabinet{
+        position:fixed;
+        margin-left:0px;
+        width:50%;
+        height:100%;
+        background-color:#FEF0FF;
+        z-index:20;
+        margin-top:-100px;
+    }
+    #file {
+        position:fixed;
+        margin-left:15%;
+        margin-top:20%;
+        padding:30px;
+        padding-top:35px;
+        color:gray;
+        text-align:center;
+        width:271px;
+        height:218px;
+        background:url("http://s10.postimg.org/gelhjjv21/small_file.png");
+        z-index:300;
+    }
+    #filedesc{
+        position:relative;
+        top:30px;
+        background:white;
+        opacity:0.7;
+        max-width:263px;
+        word-wrap:break-word;
+        padding:10px;
+    }
+    #filelinks {
+        position:relative;
+        list-style:none;
+        display:inline;
+        text-align:center;
+        width:265px;
+        margin-left:0px;
+        top:60px;
+    }
+    #filelinks a{
+        background:white;
+        color:{color:sidebar links text};
+        display:inline;
+        padding:5px;
+        height:20px;
+        margin:30px;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;
+    }
+    #filelinks a:hover{
+        background:#edf7f5;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;    
+        transition: all .3s ease-in-out;
+    }
+    #info {
+        float:right;
+        padding-bottom:0px;
+        margin-top:10px;
+    }
+    #info a{
+        border:0px solid white;
+        background-color:{color:background};
+        padding:3px;
+        text-decoration:none;
+    }
+    #info a:hover{
+        text-decoration:none;
+        background-color:{color:posts bg};
+        color:#8C8C8C;
+    }
+    #tags {
+        position:relative;
+        top:40px;
+        background:transparent;
+        display:inline;
+        float:left;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;    
+        transition: all .2s ease-in-out;
+    }
+    #tags a{
+        position:relative;
+        text-size:11px;
+        opacity:0.5px;
+        color:gray;
+        display:inline;
+    }
+    #tags a:hover{
+        color:#DBDBDB;
+    }
+    #pagi{
+        position:relative;
+        color:black;
+        background:transparent;
+        font-size:10px;
+        float:right;
+        right:10px;
+        margin-bottom:-100px;
+        bottom:-80px;
+        letter-spacing:2px;
+    }
+    
+    
+    
+    
+    #linkeu{
+        font-size:15px;
+        text-align:center;
+    }
+    #yaegi{
+        text-align:right;
+    }
+    #baekhyun{
+        font-size:15px;
+    }
+    #sehun{
+        font-size:15px;
+        font-style:italic;
+    }
+    #jilmeun {
+        background:white;
+        padding:10px;
+        min-height:40px;
+    }
+    #mul{
+        margin-top:13px;
+        margin-left:10px;
+        font-style:italic;
+    }
+    #quast {
+        float:right;
+        background:{color:posts bg};
+        padding:7px;
+        margin-top:-25px;
+    }
+    
+    
+    #chanyeol{
+        position:fixed;
+        text-align:center;
+        width:17px;
+        height:17px;
+        bottom:5px;
+        left:5px;
+        opacity:0.3;
+        z-index:500;
+    }
+</style>
+<link href="#s-m-t-tooltip" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div id="filecabinet">
+        <div id="file">
+            <br/><a href="{BlogURL}">{Title}</a>
+            <div id="filedesc">
+                {block:Description}{Description}{/block:Description}
+            </div>
+            <div id="filelinks">
+                {block:iflink1}<a href="{text:Link1}">{text:link 1 title}</a>{/block:ifLink1}{block:ifLink2}<a href="{text:Link2}">{text:link 2 title}</a><br/><br/><br/>{/block:ifLink2}
+                {block:ifLink3}<a href="{text:Link3}">{text:link 3 title}</a>{/block:ifLink3}{block:ifLink4}<a href="{text:Link4}">{text:link 4 title}</a><br/><br/><br/>{/block:ifLink4}
+            </div>
+            {block:Pagination}<div id="pagi">
+        {block:PreviousPage}<a href="{PreviousPage}">prev</a> &dash; {/block:PreviousPage}{block:NextPage}<a href="{NextPage}">next</a>{/block:NextPage}
+        </div>{/block:Pagination}
+        </div>
+    </div>
+    <div id="entries">
+    {block:Posts}
+    <div id="post">
+    
+        {block:Text}
+            {block:Title}<div id="baekhyun">{Title}</div>{/block:Title}
+            {Body}
+        {/block:Text}
+        
+        {block:Photo}
+            <a href="{Permalink}"><img width="250" src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/></a>
+            {block:Caption}{block:ifcaptions}{Caption}{/block:ifcaptions}{/block:Caption}
+        {/block:Photo}
+        
+        {block:Photoset}
+            {Photoset-250}
+            {block:Caption}{block:ifcaptions}{/block:ifcaptions}{/block:Caption}
+        {/block:Photoset}
+        
+        {block:Quote}
+            <div id="sehun">"{Quote}"</div><br/>
+            {block:Source}<div style="text-indent:10px;">&mdash;{Source}</div>{/block:Source}
+        {/block:Quote}
+        
+        {block:Link}
+            <div id="linkeu"><a href="{URL}" {Target}>{Name}</a></div>
+            {block:Description}{Description}{/block:Description}
+        {/block:Link}
+        
+        {block:Chat}
+            {block:Title}{Title}{/block:Title}
+            <table>
+                {block:Lines}
+                <tr>
+                    <th>{block:Label}<div id="yaegi">{Label}</div>{/block:Label}</th>
+                    <td>{Line}</td>
+                </tr>
+                {/block:Lines}
+            </table>
+        {/block:Chat}
+        
+        {block:Audio}
+            {AudioPlayer}
+                {block:Caption}{Caption}{/block:Caption}
+        {/block:Audio}
+        
+        {block:Video}
+            {Video-400}
+            {block:Caption}{Caption}{/block:Caption}
+        {/block:Video}
+        
+        {block:Answer}
+            <div id="jilmeun">
+                <div id="mul">{Question}</div>
+                <div id="quast"><a href="{AskerURL}" target="_blank"><img src="{AskerPortraitURL-24}"/></a></div>
+                
+            </div><br/>
+            {Answer}
+        {/block:Answer}
+        
+        <div id="info">
+            <div id="extra"><a title="{TimeAgo}" href="{Permalink}">{NoteCount}</a>{block:RebloggedFrom}  <a href="{ReblogParentURL}" title="{ReblogParentName}">via</a>{/block:RebloggedFrom}{block:ContentSource}  <a href="{SourceURL}" title="{SourceTitle}">orig</a>{/block:ContentSource}</div>
+        </div>
+        {block:permalinkpage}{block:HasTags}
+                {block:Tags}<div id="tags"><a href="{TagURL}">#{Tag} </a></div> {/block:Tags}
+            {/block:HasTags}{/block:permalinkpage}
+        
+    </div>
+    {/block:Posts}
+    
+    {block:PostNotes}{PostNotes}{/block:PostNotes}
+    </div>
+    
+    
+    <a href="http://penthm.tumblr.com/" title="theme by penthm" target="_blank"><div id="chanyeol">♚</div></a>
+</body>
+
+
+</html>
