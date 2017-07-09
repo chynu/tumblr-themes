@@ -1,6 +1,6 @@
 # Tumblr Themes by chynu-themes
 ## Themes and Pages
-I create custom blog themes and page themes for Tumblr users. To view and use these themes, please keep my rules (read the *Credits* section below) in mind, and click on either the `themes` or `pages` folder above in this repository. Themes are organized alphabetically by theme name and will lead you to instructions on how to preview and install each theme.
+I create custom blog themes and page themes for Tumblr users. To view and use these themes, please keep my rules (read the *Credits* section below) in mind, and click on either the `themes` or `pages` folder above in this repository. Themes are organized alphabetically and will lead you to instructions on how to preview and install.
 
 ## Installation
 Log onto your tumblr and go to settings. Click on the blog that you want to customize. There will be an "Edit Theme" button for theme customization. This will bring you to the theme customization page.
